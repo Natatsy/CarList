@@ -11,7 +11,11 @@ const HomePage = ({ addCar }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5001/api/cars", { model, year, manufacturer })
+      .post("https://arcane-depths-29961-afd49e5b07ec.herokuapp.com", {
+        model,
+        year,
+        manufacturer,
+      })
       .then((res) => {
         // Notify the parent (App) to update the car list
         addCar(res.data);

@@ -11,7 +11,7 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5001/api/cars") // Ensure this points to port 5001
+      .get("https://arcane-depths-29961-afd49e5b07ec.herokuapp.com") // Ensure this points to port 5001
       .then((res) => setCars(res.data))
       .catch((err) => console.log(err));
   }, []);

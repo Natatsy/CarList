@@ -11,7 +11,7 @@ const PostsPage = ({ cars, setCars }) => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:5001/api/cars/${id}`)
+      .delete(`https://arcane-depths-29961-afd49e5b07ec.herokuapp.com${id}`)
       .then(() => {
         setCars(cars.filter((car) => car._id !== id));
       })
@@ -33,7 +33,10 @@ const PostsPage = ({ cars, setCars }) => {
       manufacturer: newManufacturer,
     };
     axios
-      .put(`http://localhost:5001/api/cars/${id}`, updatedData)
+      .put(
+        `https://arcane-depths-29961-afd49e5b07ec.herokuapp.com${id}`,
+        updatedData
+      )
       .then(() => {
         const updatedCars = cars.map((car) =>
           car._id === id ? { ...car, ...updatedData } : car
