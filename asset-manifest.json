@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CarList/static/css/main.98cdad6f.css",
+    "main.js": "/CarList/static/js/main.55cb5505.js",
+    "static/js/488.5dc00adb.chunk.js": "/CarList/static/js/488.5dc00adb.chunk.js",
+    "index.html": "/CarList/index.html",
+    "main.98cdad6f.css.map": "/CarList/static/css/main.98cdad6f.css.map",
+    "main.55cb5505.js.map": "/CarList/static/js/main.55cb5505.js.map",
+    "488.5dc00adb.chunk.js.map": "/CarList/static/js/488.5dc00adb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.98cdad6f.css",
+    "static/js/main.55cb5505.js"
+  ]
+}
