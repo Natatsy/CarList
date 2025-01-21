@@ -9,7 +9,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: "https://natatsy.github.io", // Replace with your frontend's URL
+  origin: " https://natatsy.github.io/CarList/",
   methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
 };
