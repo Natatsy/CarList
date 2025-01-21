@@ -11,7 +11,9 @@ const PostsPage = ({ cars, setCars }) => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`https://arcane-depths-29961-afd49e5b07ec.herokuapp.com${id}`)
+      .delete(
+        `https://arcane-depths-29961-afd49e5b07ec.herokuapp.com/api/cars/${id}`
+      )
       .then(() => {
         setCars(cars.filter((car) => car._id !== id));
       })
