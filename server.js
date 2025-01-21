@@ -8,7 +8,14 @@ const carRoutes = require("./routes/carRoutes"); // Import routes
 const app = express();
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+  origin: "https://natatsy.github.io", // Replace with your frontend's URL
+  methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed HTTP methods
+  allowedHeaders: ["Content-Type", "Authorization"], // Specify allowed headers
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 // Connect to MongoDB
